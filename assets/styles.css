@@ -29,6 +29,7 @@ a:focus {
 
 .site-header {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
@@ -53,7 +54,7 @@ nav {
 }
 
 .page {
-  width: 1120px;
+  max-width: 70rem;
   margin: 0 auto;
   padding: 2rem;
 }
@@ -95,7 +96,7 @@ button {
 .feature-row,
 .vendor-grid {
   display: grid;
-  grid-template-columns: repeat(3, 340px);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
 
@@ -160,7 +161,7 @@ footer {
   background: var(--muted);
 }
 
-@media (min-width: 980px) and (max-width: 760px) {
+@media (max-width: 760px) {
   .hero,
   .feature-row,
   .vendor-grid {
